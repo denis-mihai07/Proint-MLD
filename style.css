@@ -1,0 +1,99 @@
+html {
+  scroll-padding-top: 60px;
+}
+
+.hero-section {
+  min-height: 105vh;
+  padding: 92px 0;
+  background-image: linear-gradient(rgba(7, 20, 38, 0.62), rgba(7, 20, 38, 0.62)), url('assets/hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-subtitle {
+  color: #cbd5e1;
+}
+
+/* Navbar style after scroll */
+.navbar.scrolled {
+  background: rgba(18, 18, 26, 0.96) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Scroll reveal animation */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease,
+              transform 0.6s ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Back-to-top button */
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 999px;
+  display: none;
+  place-items: center;
+  cursor: pointer;
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+
+}
+
+.back-to-top svg {
+  height: 1.5rem;
+}
+
+.back-to-top:hover {
+  background-color: #000000;
+}
+
+.back-to-top:hover svg {
+  fill: white;
+}
+
+
+.back-to-top.show {
+  display: none;
+}
+
+.error-msg {
+  display: block;
+  margin-top: 6px;
+  color: #f87171;
+  font-size: 0.85rem;
+}
+
+.is-invalid {
+  border-color: #f87171 !important;
+}
+
+#services {
+  background-image: linear-gradient(rgba(7, 20, 38, 0.62), rgba(7, 20, 38, 0.62)), url('assets/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+#contact {
+    background-image: linear-gradient(rgba(7, 20, 38, 0.62), rgba(7, 20, 38, 0.62)), url('assets/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
